@@ -3,8 +3,6 @@
 [![Download Month](http://img.shields.io/npm/dm/@livelybone/source-map-reverse.svg?style=flat-square)](https://www.npmjs.com/package/@livelybone/source-map-reverse)
 ![gzip with dependencies: kb](https://img.shields.io/badge/gzip--with--dependencies-kb-brightgreen.svg "gzip with dependencies: kb")
 
-> `pkg.module supported`, which means that you can apply tree-shaking in you project
-
 [中文文档](./README-CN.md)
 
 A module for reverse-parsing code
