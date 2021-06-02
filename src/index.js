@@ -24,16 +24,9 @@ if (!column) {
 const data = fs.readFileSync(filePath).toString()
 const consumer = new sourceMap.SourceMapConsumer(data)
 consumer.then(c => {
-  const position = { line: 24, column: 10, source: '../src/index.js' }
-  console.info('\n')
-  console.info(
-    `Generate position for ${JSON.stringify(position)}: `,
-    c.generatedPositionFor(position),
-    '. \nThis is for you to generator position from origin position of source file',
-    '\n\n',
-  )
   // 此处替换为原始报错的行列号
   const s = c.originalPositionFor({ line, column })
+  console.info('\n')
   console.info(
     `Origin code for line:`,
     chalk.cyan(`${line}, ${column}`),
